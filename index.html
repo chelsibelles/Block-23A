@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js"></script>
+    <title>PuppyBowl</title>
+  </head>
+  <body>
+    <header>
+      <h1>Puppy Bowl</h1>
+    </header>
+    <div id="new-player-form-container">  
+      <form id="new-player-form">
+        <main>
+      <label for="id">
+        ID
+        <input type="number" name="id">
+      </label>
+      <label for="name">
+        Name
+        <input type="text" id="name" name="name">
+      </label>
+      <label for="breed">
+        Breed
+        <input type="text" id="breed" name="breed">
+      </label>
+      <label for="status">
+        Status:
+     <select id="status" name="status">
+        <option value="bench">Bench</option>
+        <option value="field">Field</option>
+      </select> <br>
+    </label>
+      <label for="imageUrl">
+        <br>Image URL
+        <input type="text" id="imageUrl" name="imageUrl">
+      </label> 
+      <label for="createdAtDisplay">
+        Created At
+        <input type="text" id="createdAtDisplay" name="createdAtDisplay" readonly>
+    </label>
+    <label for="updatedAtDisplay">
+        Updated At
+        <input type="text" id="updatedAtDisplay" name="updatedAtDisplay" readonly>
+    </label>
+    <input type="hidden" id="createdAt" name="createdAt">
+    <input type="hidden" id="updatedAt" name="updatedAt"> 
+    <label for="teamID">
+      Team ID
+      <input type="number" name="teamID">
+    </label>
+    <label for="cohortID">
+      Cohort ID
+      <input type="number" name="cohortID">
+    </label>
+    <button type="submit">Add Player</button>
+    </main>
+    </form>
+  </div>
+  <div id="players-container"></div>
+  </body>
+</html>
